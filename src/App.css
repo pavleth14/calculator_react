@@ -1,5 +1,28 @@
 .App {
   text-align: center;
+  
+}
+
+.Calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Definiše 4 kolone */
+  gap: 10px; /* Razmak između dugmadi */  
+  width: 50%;
+  margin: 100px auto;
+}
+
+.Button {
+  text-align: center; /* Centriranje teksta unutar dugmeta */
+  padding: 10px; /* Dodatni prostor unutar dugmeta */
+  border: 1px solid black; /* Dodajte ivicu za vizuelnu razliku */
+}
+
+.Button.doubleHeight {
+  grid-row-end: span 2; /* Dvostruka visina */
+}
+
+.Button.doubleWidth {
+  grid-column-end: span 2; /* Dvostruka širina */
 }
 
 .App-logo {
